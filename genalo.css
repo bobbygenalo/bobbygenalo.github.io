@@ -133,3 +133,8 @@ html, body {
   #home { padding: 20% 0% 7% 0%; }
 
 }
+
+@media screen and (min-width: 1500px) {
+  .project img { max-height: 650px;}
+
+}
