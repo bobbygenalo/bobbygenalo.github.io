@@ -1,90 +1,94 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Bobby Genalo</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="MyFontsWebfontsKit.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="genalo.css">
-    <link rel="stylesheet" type="text/css" href="libraries/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="libraries/slick/slick-theme.css"/>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="libraries/slick/slick.min.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-43678116-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  </head>
-  <body>
-      <section id="home" class="home">
-        <div class="page base">
-          <div class="flex-wrapper flex-center">
-            <div class="content">
-              <p>Hi, I'm Bobby Genalo, a product designer based in Los Angeles, CA.</p>
-              <p>I work as a Principal Designer at <a href="http://www.carbonhealth.com" target='_blank'>Carbon Health</a> where I collaborate with clinicians, technologists, and patients to reimagine and systematize high-quality, affordable healthcare.</p>
-              <p>My latest side project is <a href="http://www.orrerylamp.com" target='_blank'>Orrery Lamp</a>, a dimmable, abstracted
-                representation of our Sun, Earth, and Moon. </p>
-              <p>Flip through some recent work highlights here and <a href="mailto:bobbygenalo@gmail.com">get in touch</a>.</p>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Bobby Genalo</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="MyFontsWebfontsKit.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="genalo.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="genalo.js"></script>
+    </head>
+    <body>
+        <section id="home" class="">
+            <div class="page base">
+                <div class="flex-center">
+                  <div class="content">
+                    <p>Hi, I’m Bobby Genalo. I help teams design products that help people.</p>
+                    <p>With experience in <a href="https://www.bobbygenalo.com/carbonhealth" target='_blank'>healthcare</a> and <a href="https://www.bobbygenalo.com/parallel" target='_blank'>transportation</a> sectors, I’m drawn to complex systems and eager to bridge the Why with the What.</p>
+                    <p>My latest side project is <a href="http://www.orrerylamp.com" target='_blank'>Orrery Lamp</a>, a dimmable, abstracted representation of our Sun, Earth, and Moon.</p>
+                    <p>Scroll through some recent work highlights here and get in touch.</p>
+                    <div id='icons' class="flex">
+                        <a class="icon" href="https://www.linkedin.com/in/bobby-genalo-0661a35/" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 72 72" fill="#999" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64 72H8C3.58172 72 0 68.4183 0 64V8C0 3.58172 3.58172 0 8 0H64C68.4183 0 72 3.58172 72 8V64C72 68.4183 68.4183 72 64 72ZM50.1375 60H60V39.7396C60 31.1672 55.1406 27.0224 48.3531 27.0224C41.5625 27.0224 38.7047 32.3104 38.7047 32.3104V28H29.2V60H38.7047V43.202C38.7047 38.701 40.7766 36.0226 44.7422 36.0226C48.3875 36.0226 50.1375 38.5964 50.1375 43.202V60ZM11 17.9049C11 21.1658 13.6234 23.8099 16.8609 23.8099C20.0984 23.8099 22.7203 21.1658 22.7203 17.9049C22.7203 14.644 20.0984 12 16.8609 12C13.6234 12 11 14.644 11 17.9049ZM21.8641 60H11.9531V28H21.8641V60Z"/>
+                            </svg>
+                        </a>
+                        <a id="icon2" class="icon" href="https://www.twitter.com/bobbygenalo" target="_blank">
+                            <svg width="44" height="40" viewBox="0 0 89 72" fill="#999" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.9285 71.7027C61.0876 71.7027 79.221 44.2319 79.221 20.4102C79.221 19.6299 79.2051 18.8532 79.1701 18.0799C82.69 15.5353 85.7494 12.3598 88.1625 8.74493C84.9324 10.1807 81.4564 11.1472 77.81 11.583C81.5319 9.3512 84.3893 5.82072 85.7373 1.612C82.2543 3.67688 78.397 5.17765 74.29 5.9879C71.0003 2.48388 66.3169 0.292236 61.131 0.292236C51.1756 0.292236 43.1026 8.3656 43.1026 18.3172C43.1026 19.7318 43.2607 21.1078 43.57 22.4277C28.5871 21.6738 15.3014 14.5003 6.4098 3.59252C4.86159 6.25663 3.96887 9.35129 3.96887 12.6533C3.96887 18.9078 7.15151 24.4292 11.9912 27.6593C9.03355 27.5679 6.25515 26.756 3.82675 25.4046C3.8241 25.4802 3.82409 25.554 3.82409 25.6348C3.82409 34.3654 10.0381 41.6547 18.2869 43.3065C16.7721 43.7194 15.1783 43.9409 13.5333 43.9409C12.3735 43.9409 11.2435 43.8267 10.1451 43.6158C12.4402 50.7786 19.0954 55.991 26.9856 56.1367C20.8155 60.9729 13.0429 63.8533 4.59543 63.8533C3.1421 63.8533 1.70636 63.7706 0.295288 63.6037C8.2737 68.7176 17.7473 71.7015 27.9295 71.7015"/>
+                            </svg>                            
+                        </a>
+                        <a class="icon" href="https://bobbygenalo.bandcamp.com/" target="_blank">
+                            <svg width="40" height="40" viewBox="0 0 72 72" fill="#999" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 72C55.8823 72 72 55.8823 72 36C72 16.1177 55.8823 0 36 0C16.1177 0 0 16.1177 0 36C0 55.8823 16.1177 72 36 72ZM28 24H54.1731L42 47.5864H17L28 24Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+        </section>
+        <section id="links" class="">
+            <div class="page">
+                <div class="flex-center">
+                    <a href="https://www.bobbygenalo.com/parallel" class="project">
+                        <h1>Parallel Systems, 2023-2024</h1>
+                        <img class="cover" src="img/Vehicles_1.png" alt="">
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="titles twittericon flex">
-            <a href="https://www.twitter.com/bobbygenalo" target="_blank"><img src="img/TwitterIcon.svg" width="20px" height="20px"></a>
-            <a href="https://bobbygenalo.bandcamp.com/" target="_blank"><img src="img/BandcampIcon.svg" width="20px" height="20px"></a>
-          </div>
-        </div>
-        <div id='carbonhealth' class="page flex-center base">
-          <img class='cover' src="img/carbonhealth-ehr-2022.png" alt="">
-          <div class="titles">
-            <a href="https://www.figma.com/proto/pdoVnATZft9AueSSRczcuI/Carbon-Health?page-id=0%3A1&node-id=73%3A1072&viewport=341%2C246%2C0.04&scaling=contain&starting-point-node-id=73%3A1072" target="_blank">Carbon Health, 2020-2023</a>
-          </div>
-        </div>
-        <div id='shift' class="page flex-center base">
-          <img class='cover' src="img/shift.jpg" alt="">
-          <div class="titles">
-            <a href="http://www.bobbygenalo.com/msk/" target="_blank">Memorial Sloan Kettering, 2014-2019</a>
-          </div>
-        </div>
-        <div class="page base">
-          <img class="cover" src="img/OrreryLamp.jpg" alt="">
-          <div class="titles">
-            <a href="http://www.orrerylamp.com" target="_blank">Orrery Lamp, 2017</a>
-          </div>
-        </div>
-        <div class="page base">
-          <img class='cover' src="img/PlusPool.png" alt="">
-          <div class="titles">
-            <a href="https://pluspool.org/timeline/partner-with-google-on-public-water-quality-dashboard/" target="_blank">Google Creative Lab, 2014</a>
-          </div>
-        </div>
-        <div class="page base">
-          <img class='cover' src="img/Commute.jpg" alt="">
-          <div class="titles">
-            <a href="https://vimeo.com/54347128" target="_blank">Commute, 2012</a>
-          </div>
-        </div>
-        <div class="page base">
-          <img class='cover' src="img/InteractiveType.jpg" alt="">
-          <!-- <video id="InteractiveTypeVideo" loop muted autoplay class="cover">
-            <source src="img/InteractiveType.webm" type="video/webm">
-            <source src="img/InteractiveType.mp4" type="video/mp4">
-          </video>
-          <script>
-              document.getElementById('InteractiveTypeVideo').play();
-          </script> -->
-          <div class="titles">
-            <a href="#">Interactive Type, 2013</a>
-          </div>
-        </div>
-      </section>
-
-    <script language="javascript" type="text/javascript" src="genalo.js"></script>
-  </body>
+            <div class="page">
+                <div class="flex-center">
+                    <a href="https://www.figma.com/proto/pdoVnATZft9AueSSRczcuI/Carbon-Health?page-id=0%3A1&node-id=73%3A1072&viewport=341%2C246%2C0.04&scaling=contain&starting-point-node-id=73%3A1072" class="project">
+                        <h1>Carbon Health, 2020-2023</h1>
+                        <img class="cover" src="img/carbonhealth-ehr-2022.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <div class="flex-center">
+                    <a href="http://www.orrerylamp.com" class="project">
+                        <h1>Orrery Lamp, 2017</h1>
+                        <img class="cover" src="img/OrreryLamp.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <div class="flex-center">
+                    <a href="https://www.bobbygenalo.com/msk" class="project">
+                        <h1>Memorial Sloan Kettering Cancer Center, 2014-2019</h1>
+                        <img class="cover" src="img/shift.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <div class="flex-center">
+                    <a href="https://pluspool.org/timeline/partner-with-google-on-public-water-quality-dashboard/" class="project">
+                        <h1>Google Creative Lab, 2013-2014</h1>
+                        <img class="cover" src="img/PlusPool.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="page">
+                <div class="flex-center">
+                    <a href="https://vimeo.com/54347128" class="project">
+                        <h1>Commute, 2011</h1>
+                        <img class="cover" src="img/commute.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

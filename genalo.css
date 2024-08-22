@@ -1,22 +1,18 @@
 html, body {
-  background-color: #FFF;
-  height: 100%;
+  /* background-color: #fff; */
+  background: linear-gradient(180deg, #f0f0f0 0%, #BFBFBF 133.03%);
+  /* height: 100%; */
   margin: 0px;
   padding: 0px;
   font-family: Larsseit, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
-  line-height: 2rem;
+  line-height: 1.7rem;
   letter-spacing: .4px;
   -webkit-backface-visibility: hidden;
 }
 .font-light { font-family: Larsseit-Light, sans-serif; }
 .font-med { font-family: Larsseit-Medium, sans-serif; }
-
-a {
-  text-decoration: underline;
-  color: #000;
-}
 
 *,
 *:before,
@@ -27,15 +23,7 @@ a {
   box-sizing: border-box;
 }
 
-.base {
-  width: 100%;
-}
-
 /* - - ^ - - */
-
-.flex-wrapper {
-  height: 100vh;
-}
 
 .flex {
   display: flex;
@@ -53,85 +41,95 @@ a {
   justify-content: space-between;
 }
 
+/* - - - Top / Home – - - */
+
+#home {
+  padding: 18% 0% 4% 0%;
+  z-index: 1;
+}
+
+#home p a {
+  text-decoration: underline;
+  color: #000;
+}
+
+#icons a svg {
+  padding-right: 1.25rem;
+  transition: fill 0.5s ease;;
+}
+
+#icons a svg:hover{
+  fill:rgb(0, 0, 0);
+}
+
+
+/* - - - Links – - - */
+
+#links {
+  padding-bottom: 100px;
+  z-index: 2;
+}
+
 .page {
   position: relative;
   overflow: hidden;
   width: 100vw;
 }
 
+.project {
+  min-height: 500px;
+  width: 80%;
+  border-radius: 14px;
+  padding: .6em;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: background-color 0.6s ease; 
+  box-shadow: none;
+  position: relative;
+}
+
+.project h1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-family: Larsseit-Medium, sans-serif;
+  background: #ECECEC;
+  border-radius: 6px;
+  opacity: 0.4;
+  padding: .25em .5em .0em .5em;
+  color: #000;
+  letter-spacing: -0.05px;
+  transition: opacity 0.6s ease; 
+}
+
+.project img {
+  width: 100%;
+  min-height: 500px;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
 .content {
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .content p {
   padding-bottom: 1.75rem;
 }
 
-.info-btn {
-  position: absolute;
-  left: 0; bottom: 30;
-}
-
-.info {
-  position: absolute;
-  left: 0; top: 0;
-  height: 100vh;
-  width: 20px;
-  background-color: #EFEFEF;
-}
-
-.hide {
-  display: none;
-}
-
-.titles {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  /*width: inherit;*/
-  font-family: Larsseit, sans-serif;
-  background-color: #FFF;
-  /*-webkit-transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -ms-transition: opacity .2s ease-in-out;
-  -o-transition: opacity .2s ease-in-out;
-  transition: opacity .2s ease-in-out;
-  opacity: .6;*/
-  border-radius: 8px;
-  padding: .755em 1em .6em 1.1em;
-  margin: .5em;
-}
-
-.titles a {
-  text-decoration: none;
-  color: #398BFC;
-}
-
 .page .cover {
   object-fit: cover;
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-#home {
-  overflow: hidden;
-}
-
-#home .slick-dots {
-  background-color: white;
-  padding: .5em .75em .875em .75em;
-  margin: .5em;
-  border-radius: 8px;
-  bottom: 0px;
-  right: 0px;
-}
-
-.twittericon { padding-bottom: 1em; }
-.twittericon a {  margin-right: 1.5em; }
+/* - - - Media Queries – - - */
 
 @media screen and (max-width: 700px) {
-  .content {width: 60%;}
+  .content { width: 60%; }
+  .project { width: 90%; }
+  #home { padding: 20% 0% 7% 0%; }
+
 }
