@@ -50,10 +50,13 @@ body {
 #page-nav nav {
   position: fixed;
   top: 0; left: 0;
-  width: 180px;
+  width: 190px;
   height: 100vh;
-  padding: 1em;
+  padding: 0 1em 0 .5em;
   border-right: 1px solid #EEE;
+  margin: 1em .5em;
+  /* border-radius: 8px; */
+  /* background-color: #f4f4f4; */
   z-index: 1;
 }
 
@@ -61,10 +64,8 @@ body {
   color: #0c57f7;
   display: block;
   line-height: 1.25em;
-  padding: .75em;
+  padding: .75em 0 .5em .75em;
   margin-bottom: .25em;
-  /* padding: .25em .325em .4em .4em; */
-  /* margin-bottom: .25em; */
   text-decoration: none;
   border-radius: 4px;
   /* transition: background-color .5s ease; */
@@ -72,12 +73,33 @@ body {
 
 #page-nav a:hover {
   background: #f4f4f4;
-  /* color: #7128ff; */
+  /* color: #000; */
 }
 
 #page-nav a.active-page-link {
-  background: #f4f4f4;
-  /* color: #fff; */
+  background: rgba(232, 232, 232, 0.6);
+  /* color: #000; */
+}
+
+.border-top {
+  border-top: 1px solid #EEE;
+  margin-top: .5em;
+}
+
+#page-nav a.backtohome {
+  display: flex;
+  align-items: center;
+  margin-top: .5em;
+  fill: #555;
+}
+
+#page-nav a svg {
+  color: #999;
+}
+
+#page-nav a.backtohome p {
+  padding-left: .5em;
+  color: #888;;
 }
 
 /* – – – ––––––– – – –  */
@@ -85,7 +107,7 @@ body {
 .content {
   padding: 0em 2.5em 1.5em 1.5em;
   position: absolute;
-  left: 180px;
+  left: 195px;
   margin: 0 auto;
   /* width: 80%; */
   height: 1600px;
@@ -95,7 +117,7 @@ body {
 }
 
 .prologue {
-  margin-top: 1em;
+  margin-top: 2em;
   border-bottom: 1px solid #EEE;
   padding: 2em 0 1.5em 0;
 }
@@ -161,7 +183,7 @@ body {
 }
 
 @media (max-width: 640px) {
-  .menu {display: none;}
+  #page-nav { display: none;}
   .content {
     position: relative;
     left: 0;
@@ -185,5 +207,6 @@ body {
   .story .copy { width: 22%; }
   .story .images { width: 78%; padding-left: 2em; }
   .story img { margin-top: 0; }
+
 
 }
