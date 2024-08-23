@@ -74,7 +74,7 @@ html, body {
 
 .page {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100vw;
 }
 
