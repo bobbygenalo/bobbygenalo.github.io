@@ -132,7 +132,7 @@ html, body {
 /* - - - Media Queries – - - */
 
 @media screen and (max-width: 700px) {
-  .content { width: 60%; }
+  .content { width: 70%; }
   .project { width: 90%; }
   #home { padding: 20% 0% 7% 0%; }
 
