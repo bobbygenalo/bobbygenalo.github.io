@@ -1,5 +1,5 @@
 html, body {
-  background: linear-gradient(180deg, #ffffff 0%, #BFBFBF 133.03%);
+  background-color: #fff;
   margin: 0px;
   padding: 0px;
   font-family: Larsseit, sans-serif;
@@ -43,7 +43,8 @@ html, body {
 
 #home {
   padding: 18% 0% 4% 0%;
-  z-index: 1;
+  position: sticky;
+  top: 0;
 }
 
 #home p a {
@@ -64,8 +65,9 @@ html, body {
 /* - - - Links – - - */
 
 #links {
+  position: relative;
   padding-bottom: 100px;
-  z-index: 2;
+  background: linear-gradient(180deg, #ffffff 0%, #BFBFBF 133.03%);
 }
 
 .page {
