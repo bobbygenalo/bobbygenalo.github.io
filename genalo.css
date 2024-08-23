@@ -43,6 +43,7 @@ html, body {
 
 #home {
   padding: 18% 0% 4% 0%;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 0;
