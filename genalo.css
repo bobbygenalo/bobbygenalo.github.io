@@ -7,7 +7,7 @@ html, body {
   color: #000;
   line-height: 1.5rem;
   letter-spacing: .4px;
-  -webkit-backface-visibility: hidden;
+  display: block;
 }
 .font-light { font-family: Larsseit-Light, sans-serif; }
 .font-med { font-family: Larsseit-Medium, sans-serif; }
@@ -42,12 +42,19 @@ html, body {
 /* - - - Top / Home – - - */
 
 #home {
-  display: block;
-  padding: 18% 0% 4% 0%;
   position: -webkit-sticky;
   position: sticky;
+  padding: 18% 0% 4% 0%;
   top: 0;
   z-index: 0;
+}
+
+.content {
+  max-width: 350px;
+}
+
+.content p {
+  padding-bottom: 1.75rem;
 }
 
 #home p a {
@@ -111,14 +118,6 @@ html, body {
   min-height: 500px;
   max-height: 500px;
   border-radius: 8px;
-}
-
-.content {
-  max-width: 350px;
-}
-
-.content p {
-  padding-bottom: 1.75rem;
 }
 
 .page .cover {
