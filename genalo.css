@@ -45,6 +45,7 @@ html, body {
   padding: 18% 0% 4% 0%;
   position: sticky;
   top: 0;
+  z-index: 0;
 }
 
 #home p a {
