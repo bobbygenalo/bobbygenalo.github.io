@@ -67,7 +67,8 @@ html, body {
 #links {
   position: relative;
   padding-bottom: 100px;
-  background: linear-gradient(180deg, #ffffff 0%, #BFBFBF 133.03%);
+  background: linear-gradient(180deg, #ffffff 0%, #8ca9a5 133.03%);
+  z-index: 99;
 }
 
 .page {

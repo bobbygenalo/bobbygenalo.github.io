@@ -26,7 +26,7 @@ $(document).ready(function(){
         var animationPercent = Math.min(scrollPercent / 0.1, 1); // Divide by 0.1 to focus on the first 10% of scroll, and cap at 1
 
         // Calculate the new color value
-        var colorValue = Math.floor(animationPercent * 210); // 136 is the difference between 0 and 136 (0x88 in hex)
+        var colorValue = Math.floor(animationPercent * 240); // 136 is the difference between 0 and 136 (0x88 in hex)
 
         // Set the new color for each paragraph
         var newColor = `rgb(${colorValue}, ${colorValue}, ${colorValue})`;
