@@ -116,6 +116,7 @@ html, body {
 }
 
 .page .cover {
+  display: block;
   object-fit: cover;
   height: 100vh;
   background-size: cover;
