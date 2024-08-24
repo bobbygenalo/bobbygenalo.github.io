@@ -67,7 +67,7 @@ html, body {
 }
 
 #icons a svg:hover{
-  fill:rgb(0, 0, 0);
+  fill:#3371E9;
 }
 
 
@@ -82,11 +82,13 @@ html, body {
 
 .page {
   position: relative;
-  /* overflow: hidden; */
   width: 100vw;
+  margin-bottom: 1em;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
   min-height: 500px;
   width: 80%;
   border-radius: 14px;
@@ -105,9 +107,9 @@ html, body {
   font-family: Larsseit-Medium, sans-serif;
   background: #ECECEC;
   border-radius: 6px;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   padding: .25em .5em .0em .5em;
-  color: #000;
+  color: #3371E9;
   letter-spacing: -0.05px;
   transition: opacity 0.6s ease; 
 }
@@ -116,7 +118,7 @@ html, body {
   width: 100%;
   min-height: 500px;
   max-height: 500px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .page .cover {
@@ -128,13 +130,41 @@ html, body {
   background-position: 50% 50%;
 }
 
+.blurb_sm {
+  color: #999;
+  margin: .25em 0 0 .5em;
+  transition: color .6s ease;
+}
+.blurb_sm h2 {
+  letter-spacing: -0.05px;
+  padding-top: .25em;
+}
+
+.blurb_lg {
+  position: absolute;
+  background-color: #fff;
+  background-blend-mode: color;
+  height: 100vh;
+  opacity: .6;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
 /* - - - Media Queries – - - */
 
 @media screen and (max-width: 700px) {
   .content { width: 70%; }
   .project { width: 90%; }
   #home { padding: 20% 0% 7% 0%; }
+  /* .blurb_sm { display: block; }
+  .blurb_lg { display: none; } */
 
+}
+
+@media screen and (min-width: 700px) {
+  /* .blurb_sm { display: none; }
+  .blurb_lg { display: block; }
+  .project h1 { display: none; } */
 }
 
 @media screen and (min-width: 1500px) {
